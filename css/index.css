@@ -106,6 +106,7 @@ main {
     line-height: 40px;
     color: #fff;
     letter-spacing: 1.75px;
+    text-transform: uppercase;
 }
 .banner h2 {
     font-family: 'Oswald', sans-serif;
@@ -272,4 +273,138 @@ main {
     font-size: 13px;
     font-weight: 500;
     color: #fff;
+}
+.blog {
+    width: 335px;
+    height: 498px;
+    background: #FF565C;
+    margin: 0 auto 20px auto;
+}
+.blog .h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff;
+    text-align: left;
+    padding: 36px 24px;
+    text-transform: uppercase;
+    line-height: 40px;
+    word-spacing: -0.38px;
+}
+.blog p {
+    width: 282px;
+    padding-left: 24px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.blog .btn {
+    width: 210px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 24px;
+}
+.blog .btn a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    color: #fff;
+}
+.footer {
+    width: 375px;
+    height: 440px;
+    margin: 100px auto 8px auto;
+    background: #1D1F24;
+    padding: 40px 0 0 20px;
+}
+.footer .footerTop .footerLogo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    color: #F9FAFC;
+    opacity: 0.2;
+}
+.footer .footerTop .copyright {
+    font-family: 'Lato', sans-serif;
+    line-height: 18px;
+    color: #fff;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+.footer .social .emailSubs {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+.footer .social .emailSubs input {
+    height: 35px;
+    border-radius: 0;
+    border: none;
+}
+.footer .social input#email {
+    width: 180px;
+    padding-left: 15px;
+    color: #1D1F24;
+}
+.footer .social input#email::placeholder {
+    opacity: 0.4;
+}
+.footer .social input#submit {
+    width: 120px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    background: #FF565C;
+    color: #fff;
+    text-align: center;
+}
+.footer .social .sns {
+    width: 194px;
+    height: 22px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.footer .social .sns p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.7;
+    margin-right: 19px;
+}
+.footer .social .sns .snsList {
+    width: 112px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer .footerNav {
+    height: 135px;
+}
+.footer .footerNav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.footer .footerNav ul li {
+    width: 50%;
+    height: 21px;
+    line-height: 21px;
+    margin-bottom: 17px;
+}
+.footer .footerNav ul li a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.75px;
 }
