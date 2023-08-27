@@ -71,7 +71,7 @@ main {
 .banner {
     width: 335px;
     height: 441px;
-    margin: 0 auto 20px auto;
+    margin: 20px auto;
     position: relative;
 }
 .banner:before {
@@ -83,7 +83,7 @@ main {
     width: 100%;
     height: 100%;
     background: no-repeat center url('../image/bannerimg.jpg');
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .banner .bannerContents {
     position: relative;
@@ -98,12 +98,14 @@ main {
     top: 84px;
     z-index: 99;
 }
-.banner .category .categoryTag {
+.category .categoryTag {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 14px;
     line-height: 40px;
+    color: #fff;
+    letter-spacing: 1.75px;
 }
 .banner h2 {
     font-family: 'Oswald', sans-serif;
@@ -154,42 +156,120 @@ main {
 .stories {
     width: 335px;
     height: 602px;
+    background: #fff;
     border: 1px solid #f2f3f6;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 .stories h4 {
-    height: 90px;
-    line-height: 90px;
+    height: 66px;
+    line-height: 66px;
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
     font-weight: 500;
     /* padding-top: 34px; */
     padding-left: 26px;
+    letter-spacing: 1.5px;
 }
 .stories .storiesContents {
-    font-family: 'Lato', sans-serif;
+    /* height: 46px; */
+    width: 294px;
+    margin: 0 auto;
     font-weight: 500;
     font-size: 18px;
-}
-.stories .storiesContents .storiesRank {
-    width: 60px;
-    padding-left: 26px;
-    float: left;
-}
-.stories .storiesContents .storiesRank li {
-    height: 104px;
-}
-.stories .storiesContents .storiesRank a {
     color: #1d1f24;
-    opacity: 0.6;
 }
-.stories .storiesContents .storiesTitle {
-    width: 240px;
-    float: right;
+.stories .storiesContents .contents01,
+.stories .storiesContents .contents02,
+.stories .storiesContents .contents03,
+.stories .storiesContents .contents04,
+.stories .storiesContents .contents05 {
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
 }
-.stories .storiesContents .storiesTitle li {
-    height: 104px;
+.stories .storiesContents .rank {
+    width: 12px;
+    font-family: 'Oswald', serif;
+    opacity: 0.16;
+    text-align: center;
 }
-.stories .storiesContents .storiesTitle a {
-    color: #1d1f24;
+.stories .storiesContents .subject {
+    width: 220px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -0.2px;
+    line-height: 26px;
+}
+.stories .storiesContents .line {
+    display: block;
+    width: 335px;
+    height: 1px;
+    background: #f2f3f6;
+    padding: 0;
+    transform: translateX(-20px);
+}
+.card {
+    width: 336px;
+    height: 274px;
+    margin: 0 auto 20px auto;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.card:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center url('../image/cardimage01.jpg');
+    opacity: 0.9;
+}
+.card .category {
+    width: 107px;
+    height: 40px;
+    line-height: 40px;
+    background: #FF565C;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 99;
+}
+.cardText {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    z-index: 99;
+}
+.cardFooter {
+    position: absolute;
+    left: 25px;
+    bottom: 22px;
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cardFooter .share,
+.cardFooter .views,
+.cardFooter .comment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 16px;  
+}
+.cardFooter img {
+    margin-right: 10px;
+}
+.cardFooter p {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
 }
