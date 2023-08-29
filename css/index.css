@@ -2,6 +2,7 @@
 html, body {
     font-size: 62.5%;
     width: 100%;
+    height: 100%;
 }
 * {
     margin: 0;
@@ -23,7 +24,6 @@ img {
     vertical-align: top;
 }
 #wrap {
-    /* width: 375px; */
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -36,7 +36,6 @@ img {
 /* Header */
 .header {
     height: 70px;
-    padding: 24px 20px 0 20px;
     padding: 20px;
     border-bottom: 1px #ebebeb solid;
 }
@@ -65,18 +64,12 @@ img {
 .header .gnb {
     display: none;
 }
-/* .header .gnb li a {
-    display: block;
-    font-size: 14px;
-} */
-
 /* Main */
 main {
     background: #f9fafc;
     margin: 0 20px;
 }
 .banner {
-    /* width: 90.5%; */
     width: 100%;
     height: 441px;
     margin: 5.3% auto;
@@ -103,11 +96,9 @@ main {
     background: #FF565C;
     margin-bottom: 30px;
     position: absolute;
-    /* left: 114px; */
     left: 34%;
     top: 84px;
     z-index: 99;
-    /* transform: translateX(25.2%); */
 }
 .category .categoryTag {
     font-family: 'Oswald', sans-serif;
@@ -125,13 +116,11 @@ main {
     font-size: 2.6rem;
     color: #fff;
     margin-bottom: 24px;
-    /* width: 275px; */
     width: 73.3%;
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
     position: absolute;
-    /* left: 35px; */
     left: 12.72%;
     top: 150px;
     z-index: 99;
@@ -169,7 +158,6 @@ main {
     color: #fff;
 }
 .stories {
-    /* width: 335px; */
     width: 100%;
     height: 602px;
     background: #fff;
@@ -182,13 +170,11 @@ main {
     font-family: 'Oswald', sans-serif;
     font-size: 1.4rem;
     font-weight: 500;
-    /* padding-top: 34px; */
     padding-left: 26px;
     letter-spacing: 1.5px;
 }
 .stories .storiesContents {
-    /* height: 46px; */
-    width: 294px;
+    width: 100%;
     margin: 0 auto;
     font-weight: 500;
     font-size: 1.8rem;
@@ -201,27 +187,27 @@ main {
 .stories .storiesContents .contents05 {
     height: 104px;
     display: flex;
-    justify-content: space-around;
-    padding: 30px 0;
+    justify-content: flex-start;
+    padding: 30px 0 30px 27px;
 }
 .stories .storiesContents .rank {
     width: 12px;
     font-family: 'Oswald', serif;
     color: rgba(29, 31, 36, 0.16);
     text-align: center;
+    margin-right: 25px;
 }
 .stories .storiesContents .subject {
-    width: 220px;
+    width: 65.67%;
     font-family: 'Lato', sans-serif;
     letter-spacing: -0.2px;
     line-height: 26px;
 }
 .stories .storiesContents .line {
     display: block;
-    width: 89.3%;
+    width: 100%;
     height: 1px;
     background: #f2f3f6;
-    transform: translateX(-20px);
 }
 .card {
     width: 100%;
@@ -332,12 +318,21 @@ main {
     font-weight: 600;
     color: #fff;
 }
+.cardbox {
+    margin-bottom: 100px;
+}
+/* Footer */
 .footer {
-    width: 375px;
+    width: 100%;
     height: 440px;
-    margin: 100px auto 8px auto;
+    margin: 0 auto;
     background: #1D1F24;
-    padding: 40px 0 0 20px;
+}
+.footer .footerWrap {
+    width: 89.3%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 .footer .footerTop .footerLogo {
     font-size: 2.4rem;
@@ -345,8 +340,10 @@ main {
     font-family: 'Lato', sans-serif;
     color: #F9FAFC;
     opacity: 0.2;
+    margin-bottom: 6px;
 }
 .footer .footerTop .copyright {
+    font-size: 1.4rem;
     font-family: 'Lato', sans-serif;
     line-height: 18px;
     color: #fff;
@@ -371,6 +368,8 @@ main {
 }
 .footer .social input#email::placeholder {
     opacity: 0.4;
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
 }
 .footer .social input#submit {
     width: 120px;
@@ -404,9 +403,6 @@ main {
     justify-content: space-between;
     align-items: flex-start;
 }
-.footer .footerNav {
-    height: 135px;
-}
 .footer .footerNav ul {
     display: flex;
     flex-flow: row wrap;
@@ -421,6 +417,7 @@ main {
 .footer .footerNav ul li a {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
+    font-size: 1.4rem;
     color: #fff;
     letter-spacing: 1.75px;
 }
@@ -439,6 +436,9 @@ main {
     .header .menubtn {
         width: 27px;
         margin: 10px 0;
+    }
+    main {
+        margin-bottom: 20px;
     }
     .banner {
         height: 581px;
@@ -530,7 +530,6 @@ main {
         height: 336px;
     }
     .maincontents .card+.card .cardText {
-        /* width: 363px; */
         width: 87.68%;
     }
     .blog {
@@ -542,7 +541,63 @@ main {
         line-height: 49px;
         margin-bottom: 20px;
     }
+    .cardbox .card {
+        width: 356px;
+        width: 48.9%;
+        margin-right: 0.02%;
+        float: left;
+    }
+    .cardbox .card+.card {
+        width: 48.9%;
+        float: right;
+        margin-bottom: 15px;
+
+    }
+    .cardbox .card+.card+.card {
+        width: 100%;
+        height: 247px;
+    }
+    .cardbox .card+.card+.card .category {
+        width: 155px;
+        width: 19.72%;
+    }
+    .cardbox .card+.card+.card .cardText {
+        width: 53.38%;
+    }
+    .footer {
+        width: 100%;
+        height: 267px;
+        margin-top: 520px;
+    }
+    .footer .footerWrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .footer .footerTop {
+        width: 34.06%;
+        height: 156px;
+        order: 0;
+    }
+    .footer .social {
+        order: 2;
+        display: flex;
+    }
+    .footer .social .sns {
+        height: 35px;
+        align-items: center;
+        margin-left: 29px;
+    }
+    .footer .footerNav {
+        width: 65.93%;
+        order: 1;
+    }
+    .footer .footerNav ul li{
+        width: 33.3%;
+    }
 }
 @media all and (min-width:1440px){
-
+    /* .header .gnb li a {
+    display: block;
+    font-size: 14px;
+} */
 }
