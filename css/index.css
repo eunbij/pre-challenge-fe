@@ -596,8 +596,35 @@ main {
     }
 }
 @media all and (min-width:1440px){
-    /* .header .gnb li a {
-    display: block;
-    font-size: 14px;
-} */
+    .header .h1 {
+        width: 60px;
+        width: 4.17%;
+        height: 30px;
+        margin-top: 7px;
+        margin-right: 63px;
+    }
+    .header .menubtn {
+        margin-top: 17px;
+    }
+    .header .gnb {
+        display: block;
+        /* width: 805px; */
+        /* width: 55.9%; */
+        height: 100%;
+        line-height: 30px;
+        margin-top: 10px;
+        float: left;
+    }
+    .header .gnb li {
+        float: left;
+        /* height: 100%; */
+        margin-right: 59px;
+    }
+    .header .gnb li a {
+        display: block;
+        font-family: 'Oswald', sans-serif;
+        font-size: 14px;
+        color: rgba(29, 31, 36, 0.2);
+        letter-spacing: 1.75px;
+    }
 }
